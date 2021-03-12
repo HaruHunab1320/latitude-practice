@@ -6,7 +6,8 @@ const style = {
   boarder: "solid 4x black",
   height: "300px",
   width: "300px",
-  margin: "0 auto"
+  margin: "0 auto",
+  padding: "10px"
 };
 
 const Board = ({ squares, onClick }) => (

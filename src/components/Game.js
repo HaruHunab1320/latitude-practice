@@ -27,6 +27,13 @@ const Game = () => {
       <div>
         <Board squares={board} onClick={handleClick} />
       </div>
+      <p>
+        {winner
+          ? "Winner is: " + winner
+          : draw
+          ? "Draw Game"
+          : "Next Player: " + (xIsNext ? "X" : "O")}
+      </p>
       {startGame()}
     </>
   );
